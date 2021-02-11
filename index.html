@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body onload="LoadPage()">
+    <section class="login-container" id="loginPage">
+
+        <div class="login-inputs" id="loginPanel">
+            <h1>Login</h1>
+            <form>
+                <input id="u_email" type="email" placeholder="sample@gmail.com">
+                <input id="u_password" type="password" placeholder="password">
+                <button onclick="CekValid()">Log In</button>
+            </form>
+            
+            <a href="#" onclick="changePanel('register')" class="register">Sign Up</a>
+            <a href="#" onclick="changePanel('forget')" class="forget">Forgot</a>
+            
+        </div>
+
+        <div class="forget-inputs" id="forgotPanel">
+            <h1>forget</h1>
+            <form>
+                <input id="f_email" type="f-email" placeholder="sample@gmail.com">
+                <button onclick="forgetProccess()">Send</button>
+            </form>
+            <a href="#" onclick="changePanel('login')" class="backLogin">Back</a>
+        </div>
+
+        <div class="register-inputs" id="registPanel">
+            <h1>Register</h1>
+            <form>
+                <input id="r_email" type="r-email" placeholder="sample@gmail.com">
+                <input id="r_psw" type="r-password" placeholder="password">
+                <input id="r_psw2" type="r-password" placeholder="password again">
+                <button onclick="RegisterConfirm()">Confirm</button>
+            </form>
+            <a href="#" onclick="changePanel('login')" class="backLogin">Back</a>
+        </div>
+    </section>
+
+    <section class="welcome-container" id=welcomePage>
+        <div class = "animation">
+            <span>welcome</span>
+        </div>
+    </section>
+</body>
+
+    <script src="controller/LoginController.js"></script>
+</html>

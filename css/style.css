@@ -1,0 +1,260 @@
+@charset "utf-8";
+
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    font-family: Calibri;
+    position: fixed;
+    background-color: #000000;
+}
+
+a {
+    text-decoration: none;
+}
+
+.login-container {
+    background-image: url("../image/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.login-container h1 {
+    color: #fff;
+    font-size: 3rem;
+    letter-spacing: 3px;
+    margin: 10px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    font-family: Magmawave Caps;
+}
+
+.login-container form {
+    background-color: #23243c;
+    box-shadow: 2px 2px 30px rgba(2px 2px 30px rgba(0, 0, 0, 0.2));
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container form input {
+    margin: 10px;
+    width: 250px;
+    height: 30px;
+    background-color: #434459;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+.login-inputs {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-inputs form input::placeholder {
+    color: #727383;
+}
+
+.login-inputs form button {
+    text-transform: uppercase;
+    width: 110px;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin: 5px;
+    font-weight: 600;
+    background-color: #3b70e0;
+    color: #fff;
+    font-size: 12px;
+    font-family: poppins;
+    letter-spacing: 1px;
+}
+
+.login-inputs form button:hover {
+    background-color: rgba(125, 49, 247);
+    transition: all ease 0.3s;
+}
+
+.forget {
+    color: #000000;
+    margin: -30px;
+    margin-right: -290px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #000000;
+}
+
+.forget-inputs {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.forget-inputs form input::placeholder {
+    color: #727383;
+}
+
+.forget-inputs form button {
+    text-transform: uppercase;
+    width: 110px;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin: 5px;
+    font-weight: 600;
+    background-color: #3b70e0;
+    color: #fff;
+    font-size: 12px;
+    font-family: poppins;
+    letter-spacing: 1px;
+}
+
+.forget-inputs form button:hover {
+    background-color: rgba(125, 49, 247);
+    transition: all ease 0.3s;
+}
+
+.register {
+    color: #000000;
+    margin: 10px;
+    margin-right: 280px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #000000;
+}
+
+.register-inputs {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-inputs form input::placeholder {
+    color: #727383;
+}
+
+.register-inputs form button {
+    text-transform: uppercase;
+    width: 110px;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin: 5px;
+    font-weight: 600;
+    background-color: #3b70e0;
+    color: #fff;
+    font-size: 12px;
+    font-family: poppins;
+    letter-spacing: 1px;
+}
+
+.register-inputs form button:hover {
+    background-color: rgba(125, 49, 247);
+    transition: all ease 0.3s;
+}
+
+.backLogin {
+    color: #000000;
+    margin: 10px;
+    margin-right: 280px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #000000;
+}
+
+.animation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: bebas kai;
+    font-size: 70px;
+    color: #ffffff;
+    line-height: 80px;
+    letter-spacing: 30px;
+    width: 500px;
+    background-color: rgba(227, 37, 40, 1.00);
+    animation: words-animation ease 3s;
+}
+
+.animation span {
+    margin: 20px;
+}
+
+.animation:before {
+    content: '';
+    position: absolute;
+    left: 1100%;
+    width: 120%;
+    height: 100%;
+    background: linear-gradient(90deg, transparant 0%, #000000 10%, #000000 100%);
+    animation: hide 5s linear forwards;
+}
+
+@keyframes words-animation {
+    0% {
+        left: 10%;
+        letter-spacing: 600px;
+        background: none;
+    }
+
+    70% {
+        background: none;
+        letter-spacing: 30px;
+        left: 30%;
+    }
+
+    80% {
+        width: 0px;
+        background-color: rgba(227, 37, 40, 1.00);
+    }
+
+    90% {
+        width: 500px;
+    }
+}
+
+@keyframes hide {
+    0% {
+        background: linear-gradient(90deg, transparant 0%, #000000 0%, #000000 100%);
+    }
+
+    80% {
+        left: 110%;
+    }
+
+    100% {
+        left: -20%;
+    }
+}
