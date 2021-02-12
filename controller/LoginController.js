@@ -1,21 +1,30 @@
 let datUser = []
 
-let thisUser = {uname : "straykids@gmail.com", psw : "straykids123"};
+let thisUser = {uname : "woy@gmail.com", psw : "woy123"};
 datUser.push(thisUser);
+let loginSuccess=false;
 
 function LoadPage(){
+    console.log("waw");
+    console.log(loginSuccess);
+    if(loginSuccess){
+        window.location.href = document.getElementById('tets').href;
+        return;
+    }
     document.getElementById('loginPanel').style.visibility= "visible";
     document.getElementById('forgotPanel').style.visibility= "hidden";
     document.getElementById('registPanel').style.visibility= "hidden";
-    document.getElementById('welcomePage').style.visibility= "hidden";
 }
 
 function CekValid(){
+    
+    document.getElementById('welcomePage').click();
     if(datUser.find(u => u.uname == document.getElementById("u_email").value && u.psw == document.getElementById("u_password").value) != undefined){
-        console.log("yey login");
-        document.getElementById('loginPage').style.visibility= "hidden";
-        document.getElementById('welcomePage').style.visibility= "visible";
+        window.location.assign("link/welcome.html");
+    }else{
+        window.alert("Password wrong");
     }
+
 }
 
 function forgetProccess(){
