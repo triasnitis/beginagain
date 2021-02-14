@@ -18,7 +18,8 @@ function LoadPage(){
 
 function CekValid(){
     
-    document.getElementById('welcomePage').click();
+    // document.getElementById('welcomePage').click();
+    console.log("Test");
     if(datUser.find(u => u.uname == document.getElementById("u_email").value && u.psw == document.getElementById("u_password").value) != undefined){
         window.location.assign("link/welcome.html");
     }else{
