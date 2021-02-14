@@ -14,7 +14,16 @@
         </div>
     </section>
 
-    
-    
+    <script>
+        setTimeout(function(){ 
+            if(localStorage.getItem('loginSuccess') == "true"){
+                window.location.assign("mainPage.html");
+            }else{
+                alert("your not login!!");
+            }
+        }, 3000);
+        
+    </script>
+
 </body>
 </html>
