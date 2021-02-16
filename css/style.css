@@ -8,13 +8,62 @@ body {
     font-family: Calibri;
     position: fixed;
     background-color: #000000;
+    align-items: center;
+    justify-content: center;
 }
 
-a {
+.check-in {
+    background-image: url("../image/bg3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.check-in h1 {
+    font-family: Poppins;
+    font-size: 40px;
+    margin: 0px;
+    padding: 300px 600px;
+    letter-spacing: 3px;
+    color: #a0beff;
+}
+
+#button-arrow{
+    background: rgba(25, 66, 141, 0);
+    /* padding: 300px 550px; */
+    margin: -300px 670px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+
+#button-arrow:hover .fa-arrow-down{
+    animation: do 1.5s none ease-in-out infinite;
+}
+
+.fa-arrow-down{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #445c8a;
+    font-size: 70px;
+}
+@keyframes do{
+    25%{top:40%;}
+    50%{top:55%;}
+    75%{top:45%;}
+    100%{top:50%;}
+}
+/* a {
     text-decoration: none;
-}
+} */
 
-.login-container {
+/* .login-container {
     background-image: url("../image/bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -191,4 +240,4 @@ a {
     letter-spacing: 2px;
     font-size: 0.9rem;
     border-bottom: 1px solid #000000;
-}
+} */

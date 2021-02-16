@@ -21,7 +21,7 @@ body {
     line-height: 80px;
     letter-spacing: 30px;
     width: 500px;
-    background-color: rgba(227, 37, 40, 1.00);
+    background-color: rgba(14, 58, 122, 0.815);
     animation: words-animation ease 3s;
 }
 
@@ -54,7 +54,7 @@ body {
 
     80% {
         width: 0px;
-        background-color: rgba(227, 37, 40, 1.00);
+        background-color: rgba(14, 58, 122, 0.815);
     }
 
     90% {

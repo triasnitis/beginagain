@@ -16,6 +16,10 @@ function LoadPage(){
     document.getElementById('registPanel').style.visibility= "hidden";
 }
 
+function changPage(){
+    window.location.assign("link/welcome.html");
+}
+
 
 function CekValid(){
     

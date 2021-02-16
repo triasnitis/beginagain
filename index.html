@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Begin Again</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
 </head>
-<body onload="LoadPage()">
-    <section class="login-container" id="loginPage">
+<body>
+    <!-- <body onload="LoadPage()"> -->
+    <section class="check-in">
+        <h1 data-text="BEGIN AGAIN">BEGIN AGAIN</h1>
+        <div id="button-arrow" onclick="changPage()"> <i class="fas fa-arrow-down"></i> </div>
+    </section>
 
-        <div class="login-inputs" id="loginPanel">
+
+    <!-- <section class="login-container" id="loginPage"> -->
+        <!-- <div class="login-inputs" id="loginPanel">
             <h1>Login</h1>
             <form>
                 <input id="u_email" type="email" placeholder="sample@gmail.com">
@@ -45,8 +52,8 @@
 
         <div class="arrow">
 
-        </div>
-    </section>
+        </div> -->
+    <!-- </section> -->
 </body>
 
     <script src="controller/LoginController.js"></script>
