@@ -7,13 +7,13 @@ let loginSuccess=false;
 function LoadPage(){
     console.log("waw");
     console.log(loginSuccess);
-    if(loginSuccess){
-        window.location.href = document.getElementById('tets').href;
-        return;
-    }
-    document.getElementById('loginPanel').style.visibility= "visible";
-    document.getElementById('forgotPanel').style.visibility= "hidden";
-    document.getElementById('registPanel').style.visibility= "hidden";
+    // if(loginSuccess){
+    //     window.location.href = document.getElementById('tets').href;
+    //     return;
+    // }
+    // document.getElementById('loginPanel').style.visibility= "visible";
+    // document.getElementById('forgotPanel').style.visibility= "hidden";
+    // document.getElementById('registPanel').style.visibility= "hidden";
 }
 
 function changPage(){
@@ -29,8 +29,8 @@ function CekValid(){
         window.location.assign("link/welcome.html");
         loginSuccess = true;
     }else{
-        window.alert("Password wrong");
-        loginSuccess = false;
+        // window.alert("Password wrong");
+        // loginSuccess = false;
     }
     localStorage["loginSuccess"] = loginSuccess;
 }
